@@ -10,6 +10,7 @@ const zipFileReferenceSchemaJson = require("./references/zip-file-reference.sche
 const fileMetaSchemaJson = require("./file-meta.schema.json");
 const filePathSchemaJson = require("./file-path.schema.json");
 const imageFileMetaSchemaJson = require("./image-file-meta.schema.json");
+// ensure all schema are what they should be before casting the exports
 predicates_1.assertEntitySchema(diskFileSchemaJson, '(disk-file.schema.json)');
 predicates_1.assertEntitySchema(imageFileSchemaJson, '(image-file.schema.json)');
 predicates_1.assertEntitySchema(zipFileSchemaJson, '(zip-file.schema.json)');

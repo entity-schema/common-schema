@@ -4,6 +4,7 @@ const predicates_1 = require("@entity-schema/predicates");
 const apiKeySchemaJson = require("./api-key.schema.json");
 const userReferenceSchemaJson = require("./user-reference.schema.json");
 const userSchemaJson = require("./user.schema.json");
+// ensure all schema are what they should be before casting the exports
 predicates_1.assertEntitySchema(apiKeySchemaJson, '(api-key.schema.json)');
 predicates_1.assertEntitySchema(userSchemaJson, '(user.schema.json)');
 predicates_1.assertSecuritySchema(apiKeySchemaJson, '(api-key.schema.json)');
